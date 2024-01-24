@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #eff1f5;
+}
+
+.App {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.App > .uploadContainer {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: #5271ff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.uploadIcon,
+.uploadBtn {
+  cursor: pointer;
+}
+
+.uploadFileName{
+  padding-top: 16px;
+  font-size: large;
+}
+
+.uploadBtn {
+  width: 200px;
+  margin-top: 16px;
+  padding: 12px;
+  color: #fff;
+  text-align: center;
+  background: #5271ff;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 12px;
+}
+
+.App > .uploadContainer:hover {
+  box-shadow: #354bad 0px 0px 0px 3px;
+}
+
+.uploadBtn:hover {
+  box-shadow: #354bad 0px 0px 0px 3px;
+}
+
+.App > .UploadedFilesWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 25px;
+  padding: 20px;
+  width: 80%;
+}
+
+.App > .UploadedFilesWrapper > .UploadedContainer {
+  margin-top: 12px;
+}
+
+.App > .UploadedFilesWrapper > .UploadedContainer > .UploadedFile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(67, 116, 250, 0.23) 0px 3px 6px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.App > .UploadedFilesWrapper > .UploadedContainer > .UploadedFile:hover{
+  scale: 1.03;
+  transition: 0.5s;
+}
+
+.App > .UploadedFilesWrapper > .UploadedContainer > p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: large;
+}
