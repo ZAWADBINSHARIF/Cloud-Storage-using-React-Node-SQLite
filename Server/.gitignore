@@ -1,3 +1,4 @@
 node_modules
 .vscode/*
-./src/public/uploads/*
+src/public/uploads/*
+database.db
