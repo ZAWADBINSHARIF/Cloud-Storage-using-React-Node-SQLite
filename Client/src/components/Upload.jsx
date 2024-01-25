@@ -14,6 +14,10 @@ const Upload = ({ setAllFiles }) => {
     }
 
     async function uploadFileToServer() {
+
+        if (!uploadFile)
+            return;
+
         let formData = new FormData();
         formData.append('upload_file', uploadFile);
 
@@ -27,7 +31,7 @@ const Upload = ({ setAllFiles }) => {
                 }
             );
             console.log(response);
-            setUploadFile(null)
+            setUploadFile(null);
             fetchFiles();
 
         } catch (error) {
