@@ -1,8 +1,8 @@
 # terminals
 terminals:
     [
-        'cd Client && yarn && yarn start',
-        'cd Server && yarn && yarn dev',
+        'cd Client && npm i && npm run dev',
+        'cd Server && npm i && npm run dev',
         'echo "We''re ready"',
     ]
 # other config
