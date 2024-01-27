@@ -1,10 +1,2 @@
-# terminals
-terminals:
-    [
-        'cd Client && npm i && npm run dev',
-        'cd Server && npm i && npm run dev',
-        'echo "We''re ready"',
-    ]
 # other config
-tabs: ['README.md']
-run-button: clear && node $$file
+tabs: ['Client/package.json']
