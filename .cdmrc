@@ -1,8 +1,8 @@
 # terminals
 terminals:
     [
-        'cd client && yarn && yarn start',
-        'cd server && yarn && yarn dev',
+        'cd Client && yarn && yarn start',
+        'cd Server && yarn && yarn dev',
         'echo "We''re ready"',
     ]
 # other config
