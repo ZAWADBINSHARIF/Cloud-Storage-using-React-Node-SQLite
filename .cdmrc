@@ -8,4 +8,3 @@ terminals:
 # other config
 tabs: ['README.md']
 run-button: clear && node $$file
-browser-link: http://localhost:1337
