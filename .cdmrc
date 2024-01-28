@@ -1,1 +1,4 @@
-tabs: ['server.js']
+tabs: ['server.js'];
+terminal: [
+    'npm install'
+];
