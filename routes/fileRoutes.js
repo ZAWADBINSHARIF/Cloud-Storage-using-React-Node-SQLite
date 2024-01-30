@@ -1,18 +1,15 @@
 const express = require('express');
+const {
+    removeUploadedFile,
+    uploadFile,
+    downloadUploadedFile,
+    getUploadedFiles } = require('../controllers/fileController');
+
 const router = express.Router();
 
-router.get('/all_files', (req, res) => {
-    res.send('<h1>/all_files path</h1>');
-});
-router.get('/download/:filename', (req, res) => {
-    const fileName = req.params.filename;
-    res.send('<h1>/download path and filename is ' + fileName + '</h1>');
-});
-router.post('/upload', (req, res) => {
-    res.send('<h1>/upload path</h1>');
-});
-router.delete('/remove/:filename', (req, res) => {
-    res.send('<h1>/remove path</h1>');
-});
+router.get('/all_files', getUploadedFiles);
+router.get('/download/:filename', downloadUploadedFile);
+router.post('/upload', uploadFile);
+router.delete('/remove/:filename', removeUploadedFile);
 
 module.exports = router;
