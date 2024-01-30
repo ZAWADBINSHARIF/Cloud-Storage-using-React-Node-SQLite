@@ -7,8 +7,11 @@ function uploadFile(req, res) {
 }
 
 function downloadUploadedFile(req, res) {
-    const fileName = req.params.filename;
-    res.send('<h1>/download path and filename is ' + fileName + '</h1>');
+    const filename = req.params.filename;
+    // the path where uploaded file keep.
+    const file = `${__dirname}/../public/uploads/${filename}`;
+    console.log(file);
+    res.download(file);
 }
 
 function removeUploadedFile(req, res) {
@@ -21,3 +24,4 @@ module.exports = {
     downloadUploadedFile,
     removeUploadedFile
 };
+
